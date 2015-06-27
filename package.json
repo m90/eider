@@ -1,6 +1,6 @@
 {
   "name": "eider",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "like http-server, only with Jade templates, browserify and LESS preprocessing",
   "main": "index.js",
   "directories": {
@@ -30,10 +30,12 @@
   "homepage": "https://github.com/m90/eider#readme",
   "dependencies": {
     "browserify-middleware": "^6.0.0",
+    "chalk": "^1.0.0",
     "connect": "^3.4.0",
     "ecstatic": "^0.8.0",
     "jade": "^1.11.0",
     "less": "^2.5.1",
+    "minimist": "^1.1.1",
     "promisify-node": "^0.1.5"
   },
   "bin": {
