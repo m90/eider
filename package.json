@@ -1,0 +1,42 @@
+{
+  "name": "eider",
+  "version": "0.0.1",
+  "description": "like http-server, only with Jade templates, browserify and LESS preprocessing",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m90/eider.git"
+  },
+  "keywords": [
+    "http",
+    "server",
+    "development",
+    "jade",
+    "less",
+    "preprocessing",
+    "browserify"
+  ],
+  "author": "Frederik Ring <frederik.ring@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m90/eider/issues"
+  },
+  "homepage": "https://github.com/m90/eider#readme",
+  "dependencies": {
+    "browserify-middleware": "^6.0.0",
+    "connect": "^3.4.0",
+    "ecstatic": "^0.8.0",
+    "jade": "^1.11.0",
+    "less": "^2.5.1",
+    "promisify-node": "^0.1.5"
+  },
+  "bin": {
+    "eider": "./bin/eider.js"
+  }
+}
