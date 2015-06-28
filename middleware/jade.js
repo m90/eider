@@ -18,10 +18,16 @@ module.exports = function(req, res, next){
 			return;
 		}
 		fs.stat(inferredTemplatefile, function(err, stats){
+			var html;
 			if (err){
 				next();
 			} else if (stats.isFile()){
-				var html = jade.renderFile(inferredTemplatefile);
+				try{
+					html = jade.renderFile(inferredTemplatefile);
+				} catch (e){
+					next(e);
+					return;
+				}
 				res.setHeader('Content-Type', 'text/html');
 				res.end(html);
 			} else {

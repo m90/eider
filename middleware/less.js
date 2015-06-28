@@ -21,6 +21,6 @@ module.exports = function(req, res, next){
 		res.setHeader('Content-Type', 'text/css');
 		res.end(css);
 	}, function(err){
-		next();
+		next(err && err.code === 'ENOENT' ? null : err);
 	});
 };

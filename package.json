@@ -1,6 +1,6 @@
 {
   "name": "eider",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "like http-server, only with Jade templates, browserify and LESS preprocessing",
   "main": "index.js",
   "directories": {
