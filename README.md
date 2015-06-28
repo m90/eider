@@ -1,4 +1,4 @@
-# eider
+# eider [![Build Status](https://travis-ci.org/m90/eider.svg?branch=master)](https://travis-ci.org/m90/eider)
 > fast, lightweight & highly opinionated development server for quickly building prototypes or proof-of-concepts, using Jade, LESS and browserify
 
 ### Installation
