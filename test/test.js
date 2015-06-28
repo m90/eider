@@ -7,6 +7,7 @@ describe('eider', function(){
 			request(app)
 				.get('/test/fixtures/eider.html')
 				.expect('Content-Type', /html/)
+				.expect(/Hello/)
 				.expect(200)
 				.end(done);
 		});
@@ -14,6 +15,7 @@ describe('eider', function(){
 			request(app)
 				.get('/test/fixtures/eider.css')
 				.expect('Content-Type', /css/)
+				.expect(/99px/)
 				.expect(200)
 				.end(done);
 		});
@@ -21,6 +23,7 @@ describe('eider', function(){
 			request(app)
 				.get('/test/fixtures/eider.js')
 				.expect('Content-Type', /javascript/)
+				.expect(/MODULE_NOT_FOUND/)
 				.expect(200)
 				.end(done);
 		});
