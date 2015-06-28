@@ -1,14 +1,14 @@
 {
   "name": "eider",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "like http-server, only with Jade templates, browserify and LESS preprocessing",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "pretest": "jshint .",
-    "test": "mocha test/test.js"
+    "pretest": "node_modules/.bin/jshint .",
+    "test": "node_modules/.bin/mocha test/test.js"
   },
   "repository": {
     "type": "git",
@@ -40,8 +40,7 @@
     "promisify-node": "^0.1.5"
   },
   "devDependencies": {
-    "mocha": "*",
-    "jshint": "*",
+    "mocha": "^2.2.5",
     "supertest": "^1.0.1"
   },
   "bin": {
