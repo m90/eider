@@ -19,17 +19,14 @@ module.exports = function(req, res, next){
 		}
 		fs.stat(inferredTemplatefile, function(err, stats){
 			var html;
-			if (err){
-				next();
-			} else if (stats.isFile()){
-				try{
+			if (!err){
+				try {
 					html = jade.renderFile(inferredTemplatefile);
+					res.setHeader('Content-Type', 'text/html');
+					res.end(html);
 				} catch (e){
 					next(e);
-					return;
 				}
-				res.setHeader('Content-Type', 'text/html');
-				res.end(html);
 			} else {
 				next();
 			}
