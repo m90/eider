@@ -17,4 +17,5 @@ module.exports = function(port){
 		.listen(port || 8080);
 	console.log(chalk.underline('QUAK, QUAK!'));
 	console.log('Local eider running at port: ' + chalk.cyan(port || 8080));
+	return app;
 };

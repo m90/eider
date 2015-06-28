@@ -25,6 +25,7 @@ module.exports = function(req, res, next){
 					res.setHeader('Content-Type', 'text/html');
 					res.end(html);
 				} catch (e){
+					e.status = 500;
 					next(e);
 				}
 			} else {
