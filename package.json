@@ -7,6 +7,7 @@
     "test": "test"
   },
   "scripts": {
+    "pretest": "jshint .",
     "test": "mocha test/test.js"
   },
   "repository": {
@@ -40,6 +41,7 @@
   },
   "devDependencies": {
     "mocha": "*",
+    "jshint": "*",
     "supertest": "^1.0.1"
   },
   "bin": {
